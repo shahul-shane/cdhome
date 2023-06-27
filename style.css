@@ -1,0 +1,178 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Fonts/GUERRILLA-Normal.ttf);
+  }
+  @font-face {
+    font-family: font;
+    src: url(./proxima_ssv/Proxima\ Nova\ Alt\ Light.otf);
+  }
+  @font-face {
+    font-family: title-font;
+    src: url(./proxima_ssv/Proxima\ Nova\ Alt\ Thin.otf);
+  }
+  @font-face {
+    font-family: add-font;
+    src: url(./proxima_ssv/Proxima\ Nova\ Alt\ Bold.otf);
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+  h2{
+    font-family: myFirstFont;
+        text-align: center;
+        font-size: 25px; line-height:70px;
+  }
+
+  footer p{
+    font-family: font;
+    text-align: center;
+  }
+  .background{
+    position: relative;
+  }
+.background img{
+    object-fit: cover;
+    width: 100%;
+}
+.background .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .background .btn:hover {
+    background-color: black;
+  }
+
+  h1{
+    text-align: center;
+    font-family: font;
+  }
+.about   h1{
+    text-align: center;
+    font-family: font;
+    font-size: 25px;
+    margin-bottom: 2%;
+  }
+  p{
+    font-family: font;
+  }
+.about, .menu{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+  h3{
+    font-family: font;
+    font-weight: bolder;
+    color: black;
+    margin-top: 2%;
+  }
+.about p:last-child{
+    text-align: center;
+}
+.line{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(182, 180, 180);
+   
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+.menu{
+    margin-top: 5%;
+
+}
+.menu h1{
+    font-size: 25px;
+    margin-bottom: 2%;
+
+}
+.menu-branch{
+    position: relative;
+}
+
+.menu-box{
+    display: flex;
+    justify-content: space-around;
+  }
+.menu-box img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+.menu-box .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .menu-box .btn2:hover {
+    background-color: black;
+  }
+.branch-address{
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-box{
+        flex-direction: column;
+        
+    }
+    .branch-address{
+        margin-top: 15%;
+        width: 100%;
+    }
+    
+.menu-box .btn2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .menu-box .btn2:hover {
+    background-color: black;
+  }
+  }
